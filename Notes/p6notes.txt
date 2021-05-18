@@ -1,0 +1,20 @@
+The popup won't close by clicking inside its borders, i.e. on the form itself, not on the overlay.
+An event listener for closing the popup by pressing Esc is added when the popup is opened, and is removed when it's closed.
+
+
+document.addEventListener("click", (evt) => {
+    if (popup.classList.contains("popup_opened")) {
+        togglePopup(popup);
+    }
+});
+
+
+
+
+function escHandler(popup) {
+
+}
+
+
+popupEdit.addEventListener("keyup", ));
+popupAdd.addEventListener("keyup", ));
